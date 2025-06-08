@@ -4,7 +4,7 @@ from sklearn.cluster import KMeans, MeanShift, estimate_bandwidth, AffinityPropa
 from sklearn.datasets import load_iris
 from sklearn.metrics import pairwise_distances_argmin
 from sklearn.preprocessing import StandardScaler
-X = np.loadtxt("LR2/data_clustering.txt", delimiter=',')
+X = np.loadtxt("PR1/data_clustering.txt", delimiter=',')
 
 bandwidth = estimate_bandwidth(X, quantile=0.2, n_samples=500)
 ms = MeanShift(bandwidth=bandwidth, bin_seeding=True)
